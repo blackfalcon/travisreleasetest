@@ -7,11 +7,12 @@ branches:
   only:
     - master
 
+before_deploy:
+  - npx semantic-release
+
 deploy:
   on:
     branch: master
-  script:
-    - npx semantic-release
   provider: npm
   email: "$NPM_EMAIL"
   api_key: "$NPM_TOKEN"

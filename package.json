@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Test package for evaluating Travis with Semantic Release",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
   "author": "dale.sande@gmail.com",
   "license": "ISC",
   "devDependencies": {
@@ -13,6 +10,9 @@
     "@commitlint/config-conventional": "^7.6.0",
     "husky": "^2.3.0",
     "semantic-release": "^15.13.12"
+  },
+  "scripts": {
+    "test": "echo \"There is no test\" && exit 0"
   },
   "husky": {
     "hooks": {

@@ -14,5 +14,6 @@ jobs:
         email: "$NPM_EMAIL"
         api_key: "$NPM_TOKEN"
         github_token: "$GITHUB_TOKEN"
-        on: master
+        on:
+          branch: master
         skip_cleanup: true

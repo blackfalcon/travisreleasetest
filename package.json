@@ -27,5 +27,8 @@
   },
   "release": {
     "branch": "master"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

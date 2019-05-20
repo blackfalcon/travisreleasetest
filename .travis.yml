@@ -7,12 +7,25 @@ branches:
   only:
     - master
 
-deploy:
-  - npx semantic-release
-  on:
-    branch: master
-  provider: npm
-  email: "$NPM_EMAIL"
-  api_key: "$NPM_TOKEN"
-  github_token: "$GITHUB_TOKEN"
-  skip_cleanup: true
+# deploy:
+#   - npx semantic-release
+#   on:
+#     branch: master
+#   provider: npm
+#   email: "$NPM_EMAIL"
+#   api_key: "$NPM_TOKEN"
+#   github_token: "$GITHUB_TOKEN"
+#   skip_cleanup: true
+
+jobs:
+  include:
+    - stage: npm release
+      node_js: 8
+      script:
+        - npx semantic-release
+      deploy:
+        provider: npm
+        email: "$NPM_EMAIL"
+        api_key: "$NPM_TOKEN"
+        github_token: "$GITHUB_TOKEN"
+        on: deploy-npm-release

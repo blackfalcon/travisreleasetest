@@ -1,5 +1,5 @@
 {
-  "name": "travisreleasetest",
+  "name": "@blackfalcon/travisreleasetest",
   "version": "0.1.0",
   "description": "Test package for evaluating Travis with Semantic Release",
   "main": "index.js",

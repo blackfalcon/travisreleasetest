@@ -3,20 +3,24 @@ language: node_js
 node_js:
   - 8
 
+branches:
+  only:
+    - master
+
 jobs:
   include:
 
     - stage: npm release
       node_js: 8
-      branches:
-        only:
-          - master
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
         api_key: "$NPM_TOKEN"
         github_token: "$GITHUB_TOKEN"
         skip_cleanup: true
-      script:
+      before_script:
         - npm run sass
+        - npm run changelog
+        - npm run concat
+      script:
         - npx semantic-release

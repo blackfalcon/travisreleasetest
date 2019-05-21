@@ -7,15 +7,14 @@ branches:
   only:
     - master
 
-before_deploy:
-  - npm run sass
-
 jobs:
   include:
     - stage: npm release
       node_js: 8
       script:
         - npx semantic-release
+      before_deploy:
+        - npm run sass
       deploy:
         provider: npm
         email: "$NPM_EMAIL"

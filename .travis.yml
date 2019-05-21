@@ -3,10 +3,12 @@ language: node_js
 node_js:
   - 8
 
-deploy:
-  on:
-    branch: master
-  skip_cleanup: true
+branches:
+  only:
+    - master
+
+before_deploy:
+  - npm run sass
 
 jobs:
   include:
@@ -19,3 +21,6 @@ jobs:
         email: "$NPM_EMAIL"
         api_key: "$NPM_TOKEN"
         github_token: "$GITHUB_TOKEN"
+        on:
+          branch: master
+        skip_cleanup: true

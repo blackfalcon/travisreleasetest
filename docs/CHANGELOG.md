@@ -1,5 +1,12 @@
 # This is amazing!
 
+## [1.7.3](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.2...v1.7.3) (2019-05-21)
+
+
+### Bug Fixes
+
+* add back in specifics for git assets ([5661ea3](https://github.com/blackfalcon/travisreleasetest/commit/5661ea3))
+
 # [1.7.0](https://github.com/blackfalcon/travisreleasetest/compare/v1.6.3...v1.7.0) (2019-05-21)
 
 

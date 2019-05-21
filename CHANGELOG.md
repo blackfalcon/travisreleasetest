@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.7.7](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.6...v1.7.7) (2019-05-21)
+
+
+### Performance Improvements
+
+* **pencil:** remove graphiteWidth option ([4f7ed15](https://github.com/blackfalcon/travisreleasetest/commit/4f7ed15))
+
 ## [1.7.6](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.5...v1.7.6) (2019-05-21)
 
 

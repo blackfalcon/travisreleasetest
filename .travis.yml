@@ -11,8 +11,6 @@ jobs:
   include:
     - stage: npm release
       node_js: 8
-      script:
-        - npx semantic-release
       before_deploy:
         - npm run sass
       deploy:
@@ -23,3 +21,5 @@ jobs:
         on:
           branch: master
         skip_cleanup: true
+      script:
+        - npx semantic-release

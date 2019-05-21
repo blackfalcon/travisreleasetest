@@ -18,8 +18,6 @@ jobs:
         api_key: "$NPM_TOKEN"
         github_token: "$GITHUB_TOKEN"
         skip_cleanup: true
-        on:
-          branch: master
       script:
         - npm run sass
         - npx semantic-release

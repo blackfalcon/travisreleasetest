@@ -1,6 +1,6 @@
 {
   "name": "@blackfalcon/travisreleasetest",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Test package for evaluating Travis with Semantic Release",
   "main": "index.js",
   "author": "dale.sande@gmail.com",
@@ -35,7 +35,8 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog", {
+      "@semantic-release/changelog",
+      {
         "changelogFile": "docs/CHANGELOG.md",
         "changelogTitle": "This is a test ..."
       },

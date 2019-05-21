@@ -1,3 +1,12 @@
+# Semantic Release Automated Changelog
+
+## [1.7.6](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.5...v1.7.6) (2019-05-21)
+
+
+### Performance Improvements
+
+* this is the one ([a7cd66c](https://github.com/blackfalcon/travisreleasetest/commit/a7cd66c))
+
 ## [1.5.2](https://github.com/blackfalcon/travisreleasetest/compare/v1.5.1...v1.5.2) (2019-05-21)
 
 

@@ -1,5 +1,12 @@
 # This is amazing!
 
+## [1.7.4](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.3...v1.7.4) (2019-05-21)
+
+
+### Bug Fixes
+
+* mixing things up ([d27a3b4](https://github.com/blackfalcon/travisreleasetest/commit/d27a3b4))
+
 ## [1.7.3](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.2...v1.7.3) (2019-05-21)
 
 

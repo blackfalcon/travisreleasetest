@@ -7,20 +7,16 @@ branches:
   only:
     - master
 
-jobs:
-  include:
+notifactions:
+  email: false
 
-    - stage: npm release
-      node_js: 8
-      deploy:
-        provider: npm
-        email: "$NPM_EMAIL"
-        api_key: "$NPM_TOKEN"
-        github_token: "$GITHUB_TOKEN"
-        skip_cleanup: true
-      before_script:
-        - npm run sass
-        - npm run changelog
-        - npm run concat
-      script:
-        - npx semantic-release
+before_script:
+  - npm run sass
+  - npm run changelog
+  - npm run concat
+
+after_success:
+  - npx semantic-release
+
+deploy:
+  skip_cleanup: true

@@ -1,5 +1,6 @@
 # standard ignore
 .gitignore
+.travis.tml
 
 # ignore src
 src/**/*

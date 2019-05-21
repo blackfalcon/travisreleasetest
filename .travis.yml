@@ -9,6 +9,11 @@ branches:
 
 jobs:
   include:
+
+    - stage: before deploy
+      script:
+        - npm run sass
+
     - stage: npm release
       node_js: 8
       before_deploy:

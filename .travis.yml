@@ -13,18 +13,15 @@ jobs:
     - stage: before deploy
       script:
         - npm run sass
+      deploy:
+        skip_cleanup: true
 
     - stage: npm release
       node_js: 8
-      before_deploy:
-        - npm run sass
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
         api_key: "$NPM_TOKEN"
         github_token: "$GITHUB_TOKEN"
-        on:
-          branch: master
-        skip_cleanup: true
       script:
         - npx semantic-release

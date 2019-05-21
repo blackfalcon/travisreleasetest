@@ -1,6 +1,6 @@
 {
   "name": "@blackfalcon/travisreleasetest",
-  "version": "1.6.2",
+  "version": "1.7.1",
   "description": "Test package for evaluating Travis with Semantic Release",
   "main": "index.js",
   "author": "dale.sande@gmail.com",
@@ -40,7 +40,8 @@
         "changelogTitle": "# This is amazing!"
       }],
       "@semantic-release/git",
-      "@semantic-release/npm"
+      "@semantic-release/npm",
+      "@semantic-release/github"
     ]
   },
   "publishConfig": {

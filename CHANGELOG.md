@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [1.7.8](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.7...v1.7.8) (2019-05-21)
+
+
+### Performance Improvements
+
+* this will break all the things ([f1965a0](https://github.com/blackfalcon/travisreleasetest/commit/f1965a0))
+
 ## [1.7.7](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.6...v1.7.7) (2019-05-21)
 
 

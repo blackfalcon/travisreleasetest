@@ -1,6 +1,6 @@
 {
   "name": "@blackfalcon/travisreleasetest",
-  "version": "1.7.7",
+  "version": "1.7.8",
   "description": "Test package for evaluating Travis with Semantic Release",
   "main": "index.js",
   "author": "dale.sande@gmail.com",

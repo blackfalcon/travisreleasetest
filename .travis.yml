@@ -17,6 +17,3 @@ before_script:
 
 after_success:
   - npx semantic-release
-
-deploy:
-  skip_cleanup: true

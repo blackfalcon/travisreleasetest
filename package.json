@@ -38,8 +38,8 @@
       [
         "@semantic-release/changelog",
         {
-          "changelogFile": "docs/CHANGELOG.md",
-          "changelogTitle": "# This is amazing!"
+          "changelogFile": "./CHANGELOG.md",
+          "changelogTitle": "# Semantic Release Automated Changelog"
         }
       ],
       "@semantic-release/npm",

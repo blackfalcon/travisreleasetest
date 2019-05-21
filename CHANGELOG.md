@@ -1,5 +1,18 @@
 # Semantic Release Automated Changelog
 
+# [2.0.0](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.8...v2.0.0) (2019-05-21)
+
+
+### Performance Improvements
+
+* **pencil:** remove graphiteWidth option ([21aae78](https://github.com/blackfalcon/travisreleasetest/commit/21aae78))
+
+
+### BREAKING CHANGES
+
+* **pencil:** The graphiteWidth option has been removed.
+The default graphite width of 10mm is always used for performance reasons.
+
 ## [1.7.8](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.7...v1.7.8) (2019-05-21)
 
 

@@ -39,7 +39,9 @@
         "changelogFile": "docs/CHANGELOG.md",
         "changelogTitle": "# This is amazing!"
       }],
-      "@semantic-release/git",
+      [ "@semantic-release/git", {
+        "assets": [ "docs/CHANGELOG.md", "package.json" ]
+      }],
       "@semantic-release/npm",
       "@semantic-release/github"
     ]

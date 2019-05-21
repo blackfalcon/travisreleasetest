@@ -9,10 +9,12 @@
     "@commitlint/cli": "^7.6.1",
     "@commitlint/config-conventional": "^7.6.0",
     "husky": "^2.3.0",
+    "sass": "^1.20.1",
     "semantic-release": "^15.13.12"
   },
   "scripts": {
-    "test": "echo \"There is no test\" && exit 0"
+    "test": "echo \"There is no test\" && exit 0",
+    "sass": "sass --no-source-map ./src/style.scss ./dist/style.css"
   },
   "husky": {
     "hooks": {

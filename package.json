@@ -36,7 +36,7 @@
       [
         "@semantic-release/changelog",
         {
-          "changelogFile": ".CHANGELOG.md"
+          "changelogFile": "./LOGS.md"
         }
       ],
       "@semantic-release/github"

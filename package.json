@@ -8,17 +8,14 @@
   "devDependencies": {
     "@commitlint/cli": "^7.6.1",
     "@commitlint/config-conventional": "^7.6.0",
-    "auto-changelog": "^1.13.0",
-    "concat": "^1.0.3",
+    "@semantic-release/changelog": "^3.0.2",
     "husky": "^2.3.0",
     "sass": "^1.20.1",
     "semantic-release": "^15.13.12"
   },
   "scripts": {
     "test": "echo \"There is no test\" && exit 0",
-    "sass": "sass --no-source-map ./src/style.scss ./dist/style.css",
-    "changelog": "auto-changelog --output ./CHANGELOG.md -p -b 5",
-    "concat": "concat -o ./README.md ./README.md ./CHANGELOG.md"
+    "sass": "sass --no-source-map ./src/style.scss ./dist/style.css"
   },
   "husky": {
     "hooks": {
@@ -32,7 +29,18 @@
     ]
   },
   "release": {
-    "branch": "master"
+    "branch": "master",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": ".CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/git"
+    ]
   },
   "publishConfig": {
     "access": "public"

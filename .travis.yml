@@ -12,8 +12,6 @@ notifactions:
 
 before_script:
   - npm run sass
-  - npm run changelog
-  - npm run concat
 
 after_success:
   - npx semantic-release

@@ -6,13 +6,13 @@
 
 > For the sake of demonstration, this repository is a simple little thing that will take a Scss file and output a CSS file in a `dist/` dir.
 
-Like me, you may have built a project and wanted to release it to the world! YAY! That's awesome.
+Like me, you may have built a project and wanted to release it to the world! YAY! That's awesome!
 
-But also like me, when you get to the RELEASE part, that's where the sadness sets in. That being said, yes, it is as easy as pie to take your code, do a local build, manually update the version number and publish to npm is REALLY EASY, but that process sucks and it doesn't scale.
+But also like me, when you get to the RELEASE part, that's where the sadness sets in. Yes, it is as easy as pie to take your code and do a local build, manually update the version number and publish to npm, but that process sucks and it doesn't scale.
 
 It's at this point where a few things may come into play.
 
-1. Automated built process
+1. Automated build process
 1. Automated version management
 1. Automated CHANGELOG.md creation/updates
 
@@ -47,17 +47,17 @@ Now that you are in Travis CI's tools with your repo enabled, look for the `MORE
 
 In here you will want to configure three environmental variables;
 
-1. GITHUB_TOKEN
-1. NPM_EMAIL
-1. NPM_TOKEN
+1. GITHUB_TOKEN   // go to your Github account and generate the token
+1. NPM_EMAIL      // this is the email address per your npmjs.org account
+1. NPM_TOKEN      // in your account settings, generate a token
 
-These will be needed for automated deplopyment to npmjs.org and allow for updates to be committed back to your repo.
+These will be needed for automated deployment to npmjs.org and allow for updates to be committed back to your repo.
 
 In the next steps we will come back to the `.travis.yml` file, but for now, you are done configuring within the site.
 
 ## package.json
 
-90% of the magic to make this work will happen in the `package.json` file once configured. To get things rolling, you will need to install come packages.
+90% of the magic to make this work will happen in the `package.json` file once configured. To get things rolling, you will need to install some packages.
 
 ```
 $ npm i semantic-release -D
@@ -94,6 +94,9 @@ Once this is completed, while this will not automate releases yet, it will lint 
 The following examples illustrate how different commit messages will evaluate to different release versions.
 
 #### MAJOR
+
+For a MAJOR release, you MUST follow this template. The use of `perf:` and `BREAKING CHANGE:` are needed in order to push a major release.
+
 ```
 perf(pencil): remove graphiteWidth option
 
@@ -179,9 +182,11 @@ after_success:
   - npx semantic-release
 ```
 
-What I didn't understand initially was that semantic-release does all the work that the `deploy` config does with Travis. So there was a lot of confusion between how semantic-release works and how Travis works.
+What I didn't understand initially was that semantic-release does all the work that the `deploy` config does with Travis. So there was a lot of confusion between how semantic-release works and how Travis works. And my build was trying to deploy twice on Travis?
 
-In the end, the things to remember is, `before_script:` will be where you perform and build options to be included in the npm package you are distributing.
+So, do not use the `deploy:` config as illustrated in many of the Travis docs.
+
+Things to remember are, `before_script:` will be where you perform and build options to be included in the npm package you are distributing.
 
 Once that has completed, Travis will run `npm test`. So, just be aware of that.
 
@@ -190,3 +195,9 @@ After your pre-build tasks have been completed, and your test(s) pass, then in t
 That is an amazing mouthful of events and it's all out of your hands!
 
 That's what makes this so cool. The idea that all of this happens without personal intervention and by establishing a commit message standard, you are assured that others that commit to your project will always comply with process.
+
+## Greenkeeper
+
+Now Greenkeeper is a pretty awesome service and NOT NEEDED for semantic-release to work. I simply wanted to test out this service and what better repo to use it on then this. Why not?
+
+If you are interested in Greenkeeper, simply click in the badge in this repo and it will walk you through the steps to set up Greenkeeper on your repo.

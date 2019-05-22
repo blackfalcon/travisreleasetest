@@ -1,5 +1,7 @@
 # Semantic Release with Travis CI
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/blackfalcon/travisreleasetest.svg)](https://greenkeeper.io/)
+
 > For the sake of demonstration, this repository is a simple little thing that will take a Scss file and output a CSS file in a `dist/` dir.
 
 Like me, you may have built a project and wanted to release it to the world! YAY! That's awesome.

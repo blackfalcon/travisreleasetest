@@ -1,6 +1,8 @@
-# Semantic Release with Travis CI
-
+[![Build Status](https://travis-ci.org/blackfalcon/travisreleasetest.svg?branch=master)](https://travis-ci.org/blackfalcon/travisreleasetest)
+![npm (scoped)](https://img.shields.io/npm/v/@blackfalcon/travisreleasetest.svg?color=orange)
 [![Greenkeeper badge](https://badges.greenkeeper.io/blackfalcon/travisreleasetest.svg)](https://greenkeeper.io/)
+
+# Semantic Release with Travis CI
 
 > For the sake of demonstration, this repository is a simple little thing that will take a Scss file and output a CSS file in a `dist/` dir.
 

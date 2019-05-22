@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+# [2.1.0](https://github.com/blackfalcon/travisreleasetest/compare/v2.0.0...v2.1.0) (2019-05-22)
+
+
+### Features
+
+* add badges to readme ([906eaf3](https://github.com/blackfalcon/travisreleasetest/commit/906eaf3))
+
 # [2.0.0](https://github.com/blackfalcon/travisreleasetest/compare/v1.7.8...v2.0.0) (2019-05-21)
 
 

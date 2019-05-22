@@ -1,5 +1,12 @@
 # Semantic Release Automated Changelog
 
+## [2.1.1](https://github.com/blackfalcon/travisreleasetest/compare/v2.1.0...v2.1.1) (2019-05-22)
+
+
+### Bug Fixes
+
+* docs: update readme ([5367790](https://github.com/blackfalcon/travisreleasetest/commit/5367790))
+
 # [2.1.0](https://github.com/blackfalcon/travisreleasetest/compare/v2.0.0...v2.1.0) (2019-05-22)
 
 
